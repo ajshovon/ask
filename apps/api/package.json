@@ -1,0 +1,29 @@
+{
+  "name": "ask-api",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "db:migrate:generate": "drizzle-kit generate",
+    "db:migrate:apply": "tsx ./src/db/migrate.ts",
+    "db:seed": "tsx ./src/db/seed.ts",
+    "db:set": "pnpm wrangler secret put NEON_DATABASE_URL",
+    "jwt:secret:set": "pnpm wrangler secret put JWT_SECRET"
+  },
+  "type": "module",
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.1",
+    "@neondatabase/serverless": "^0.10.3",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.1",
+    "hono": "^4.6.9",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "@types/node": "^20",
+    "drizzle-kit": "^0.28.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "wrangler": "^3.83.0"
+  }
+}

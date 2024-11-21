@@ -1,0 +1,4 @@
+name = "ask-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-06"
+#route = { pattern = "{{CUSTOM_DOMAIN}}" , custom_domain = true }

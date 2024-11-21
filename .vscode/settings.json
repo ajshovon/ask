@@ -1,0 +1,18 @@
+{
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "cSpell.words": ["dtos", "Hono", "nextjs", "signin"],
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 300,
+  "editor.insertSpaces": true,
+  "prettier.useTabs": false
+}
